@@ -30,11 +30,6 @@ __Figure 2M: Mass spectrometry analysis of acid-enriched histone protein prepara
 - contains proteins (histones) abundance change CHD1iMN/Control
 - change in detected histone modifications (PTMs) 
 
-<details>
-<summary>to remove later</summary>
-ksdjvbn
-<details>
-
 ## RNA-seq data analysis
 <details>
 <summary>from Methods</summary>
