@@ -9,6 +9,8 @@ RNA-seq data generated in this study have been deposited in the Gene Expression 
 For peptide identification from DDA data, the RAW-files were loaded into Proteome Discoverer (version 3.2.0.450, Thermo Scientific). All MS/MS spectra were searched using MSAmanda version 3.0 (Dorfer V. et al., J. Proteome Res. 2014 Aug 1;13(8):3679-84). The peptide and fragment mass tolerance was set to ±10 ppm, the maximum number of missed cleavages was set to 2, using tryptic enzymatic specificity without proline restriction. Peptide and protein identification was performed in two steps. For an initial search the RAW-files were searched against the Uniprot reference database for mouse (21,816 sequences; 11,706,438 residues), supplemented with common contaminants and sequences of tagged proteins of interest. The result was filtered to 1 % FDR on protein level using the Percolator algorithm (Käll L. et al., Nat. Methods. 2007 Nov; 4(11):923-5) integrated in Proteome Discoverer. A sub-database of proteins identified in this search was generated for further processing. For the second search, the RAW-files were searched against the created sub-database using the same settings as above and considering the following additional variable modifications: oxidation on methionine, phosphorylation on serine, threonine and tyrosine, acetylation on Lysine and protein N-terminus, methylation on Arginine, Lysine and protein N-terminus, di-methylation on Arginine and Lysine, tri-methylation on Lysine and glutamine to pyro-glutamate conversion at peptide N-terminal glutamine. The localization of the post-translational modification sites within the peptides was performed with the tool ptmRS, based on the tool phosphoRS (Taus T. et al., J. Proteome Res. 2011, 10, 5354-62). The result was filtered to 1 % FDR on PSM and protein level using the Percolator algorithm. Additionally, an Amanda score cut-off of at least 150 was applied. Proteins were filtered to be identified by a minimum of 2 PSMs in at least 1 sample. Protein areas have been computed in IMP-apQuant (Doblmann J. et. al, J Proteome Res 2019, 18(1):535-41) by summing up unique and razor peptides. Resulting protein areas were normalized using iBAQ (Schwanhäusser B. et al., Nature 2011, 473(7347):337−42) and sum normalization was applied for normalization between samples. Match-between-runs (MBR) was applied for peptides with high confident peak area that were identified by MS/MS spectra in at least one run. Proteins were filtered to be identified by a minimum of 3 quantified peptides. 
 </details>
 
+Mean abundance is calculated as an average of protein spectral areas among all samples. Spectral areas of proteins are comprised of spectral areas of detected peptides assigned to a protein and normalized for all proteins in a sample. Fold change is calculated as a ratio between the mean spectral areas of CHD1IMN samples and Control samples.
+
 ```
 Mass spectrometry of extracted histones
         |
@@ -24,6 +26,11 @@ Visualisation with Python
 ```
 Resulting abundance table [file]     
 Visualisation with Pythin [scripts] [Figure 2M]
+
+<details>
+<summary>to remove later</summary>
+
+<details>
 
 ## RNA-seq data analysis
 <details>
