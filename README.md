@@ -24,9 +24,11 @@ Resulting abundance table
 Visualisation with Python
 
 ```
-Resulting abundance table [file]     
-Visualisation with Python [scripts]   
-(Figure 2M: Mass spectrometry analysis of acid-enriched histone protein preparations generated from spermatocyte-enriched F2 STA-PUT fractions)
+[Resulting abundance table .xlsm](Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
+[Visualisation with Python .ipynb]()
+Figure 2M: Mass spectrometry analysis of acid-enriched histone protein preparations    
+- contains proteins (histones) abundance change CHD1iMN/Control
+- change in detected histone modifications (PTMs) 
 
 <details>
 <summary>to remove later</summary>
