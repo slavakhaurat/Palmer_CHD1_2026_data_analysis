@@ -81,6 +81,7 @@ nf-core/atacseq
 Merged BAMs per condition -> Visualisation (Fragment length distribution) (Figure 2A, Figure S3A,B,I)
         |
         V
+Coverage and CPM normalisation
      BigWigs -> Visualisation (ATACseq coverage in genomic bins) (Figure 3B,C,D,E,F; Figure S3H) + DSB hotspots (Figure 5A,B,C)
         |
         |-> Couple the accessibility of promoters with RNA abundance of correspondent genes (Figure 3H, Figure S3D,E,F)
