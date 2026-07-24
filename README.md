@@ -25,8 +25,8 @@ Visualisation with Python (Figure 2M)
 
 ```
 [Resulting abundance table .xlsm](Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
-[Visualisation with Python .ipynb](Mass_spec_Histones_main_3nd_cleaned.ipynb)    
-__Figure 2M Mass spectrometry analysis of acid-enriched histone protein preparations__    
+[Visualisation with Python .ipynb](Mass_spec_Histones_main_3nd_cleaned.ipynb)      
+__Figure 2M__ Mass spectrometry analysis of acid-enriched histone protein preparations    
 - contains proteins (histones) abundance change CHD1iMN/Control
 - change in detected histone modifications (PTMs) 
 
@@ -87,9 +87,10 @@ Coverage and CPM normalisation
         |-> Couple the accessibility of promoters with RNA abundance of correspondent genes (Figure 3H, Figure S3D,E,F)
 
 ```
-HOMER_Output_FDR005     
-HOMER_Output_FDR001
-[Changed accessibility peaks accross genome features .ipynb]() (Figure S3C)
+[HOMER_Output_FDR005](HOMER_deseq2_changed_005_out)     
+[HOMER_Output_FDR001](HOMER_deseq2_changed_001_out)      
+[Changed accessibility peaks accross genome features .ipynb](HOMER_hist_DeSeq2_cleaned.ipynb)      
+__Figure S3C__
 
 
 
