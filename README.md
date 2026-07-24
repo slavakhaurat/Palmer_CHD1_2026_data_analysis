@@ -21,7 +21,7 @@ Proteomics data processing
 Resulting abundance table
         |
         V
-Visualisation with Python
+Visualisation with Python (Figure 2M)
 
 ```
 [Resulting abundance table .xlsm](Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
@@ -57,34 +57,33 @@ Python notebooks
 
 
 ## ATAC-seq data analysis from spermatocytes and MEFs
+
 <details>
 <summary>from Methods</summary>   
 For ATAC-seq experiments performed on STA-PUT-purified spermatocyte F2 fractions. Cell pellets were washed in PBS, and 40,000 cells per sample were processed using the Active Motif ATAC-Seq Kit according to the manufacturer’s instructions. For ATAC-seq experiments performed on 4-OHT or ETOH-treated Chd1iKO MEFs, Cells were trypsinised at ~70% confluency, washed with PBS and 100,000 cells per sample were processed using the Active Motif ATAC-Seq Kit according to the manufacturer’s instructions. For ATAC-seq performed on STA-PUT-purified spermatocyte F2 fractions. Cell pellets were washed in PBS, and 40,000 cells per sample were processed using the Active Motif ATAC-Seq Kit according to the manufacturer’s instructions. For ATAC-seq performed on 4-OHT or ETOH-treated Chd1iKO MEFs, Cells were trypsinised at ~70% confluency, washed with PBS and 100,000 cells per sample were processed using the Active Motif ATAC-Seq Kit according to the manufacturer’s instructions.
 </details>
 
-        Two sets of ATAC-seq libraries were generated: meiotic and somatic. Meiotic libraries were prepared from STA-PUT purified spermatocyte (F2) fractions, with three biological replicates per condition. Somatic libraries were generated from mouse embryonic fibroblasts (MEFs) derived from a single Control and a single Chd1iMN mouse, with three replicate libraries per condition. All ATAC-seq data were processed using the same pipeline.      
-        Libraries were sequenced on an Illumina NextSeq 550 platform using paired-end 75 bp reads, using the digitonin conditions provided with the kit. ATAC-seq data were processed using the nf-core/atacseq pipeline implemented in Nextflow 120. Adapter trimming and quality filtering were performed using Trim Galore! 121, reads were aligned to the mouse reference genome (GRCm38/mm10) using BWA-MEM 126, and mitochondrial reads, PCR duplicates, and low-quality alignments were removed using SAMtools 127 and Picard. To perform differential chromatin accessibility analysis, peaks were called for each replicate using MACS2 v2.2.7.1 128, the resulting files were assessed using DESeq2 125 to compare control and Chd1iMN conditions. The differentially accessible regions (FDR < 5%) were assigned to genome features using HOMER v4.10 129 and the same Ensembl release of Mus musculus GRCm38/mm10 genome annotation. __Figure S3 C__ To visualize the fragment length distribution, unnormalized alignment files were merged per condition and the histograms were generated with number of fragments normalized to one million mapped fragments within each condition. __Figure 3 A; Figure S3 A,B,I__      
-        Genome-wide ATAC-seq coverage tracks were generated from the merged alignment files for each condition using bamCoverage from deepTools v3.4.3 130, CPM method was used to normalize the coverage. To visualise the genome-wide chromatin accessibility in genomic bins, ATAC-seq coverage was calculated for each 2kb genomic bin using the merged and normalized BigWig files and plotted as a scatterplot for both conditions. Bins from sex chromosomes and bins overlapping annotated transcription start sites were highlighted with color. Gene annotations were obtained from Ensembl release 95 for the Mus musculus GRCm38/mm10 genome assembly. __Figure 3 B,C,D,E,F; Figure S3 H__ To couple the promoter accessibility derived from ATAC-seq and RNA abundance derived from RNA-seq data, promoter regions from the Mus musculus GRCm38/mm10 genome annotation (Ensembl release 95) were coupled with featureCounts RNA-seq DESeq2 analysis output based on gene ID. __Figure 3 H, Figure S3 D,E,F__ The coordinates of double-strand break (DSB) hotspots were used from Lange et al., 2016, the DSB hotspots are sorted based on the annotated SPO11-oligo coverage per hotspot and the top 10% are visualised. __Figure 5 A,B,C__
+- Two sets of ATAC-seq libraries were generated: meiotic and somatic. Meiotic libraries were prepared from STA-PUT purified spermatocyte (F2) fractions, with three biological replicates per condition. Somatic libraries were generated from mouse embryonic fibroblasts (MEFs) derived from a single Control and a single Chd1iMN mouse, with three replicate libraries per condition. All ATAC-seq data were processed using the same pipeline.      
+- Libraries were sequenced on an Illumina NextSeq 550 platform using paired-end 75 bp reads, using the digitonin conditions provided with the kit. ATAC-seq data were processed using the nf-core/atacseq pipeline implemented in Nextflow 120. Adapter trimming and quality filtering were performed using Trim Galore! 121, reads were aligned to the mouse reference genome (GRCm38/mm10) using BWA-MEM 126, and mitochondrial reads, PCR duplicates, and low-quality alignments were removed using SAMtools 127 and Picard. To perform differential chromatin accessibility analysis, peaks were called for each replicate using MACS2 v2.2.7.1 128, the resulting files were assessed using DESeq2 125 to compare control and Chd1iMN conditions. The differentially accessible regions (FDR < 5%) were assigned to genome features using HOMER v4.10 129 and the same Ensembl release of Mus musculus GRCm38/mm10 genome annotation. __Figure S3C__ To visualize the fragment length distribution, unnormalized alignment files were merged per condition and the histograms were generated with number of fragments normalized to one million mapped fragments within each condition. __Figure 3A; Figure S3A,B,I__      
+- Genome-wide ATAC-seq coverage tracks were generated from the merged alignment files for each condition using bamCoverage from deepTools v3.4.3 130, CPM method was used to normalize the coverage. To visualise the genome-wide chromatin accessibility in genomic bins, ATAC-seq coverage was calculated for each 2kb genomic bin using the merged and normalized BigWig files and plotted as a scatterplot for both conditions. Bins from sex chromosomes and bins overlapping annotated transcription start sites were highlighted with color. Gene annotations were obtained from Ensembl release 95 for the Mus musculus GRCm38/mm10 genome assembly. __Figure 3B,C,D,E,F; Figure S3H__ To couple the promoter accessibility derived from ATAC-seq and RNA abundance derived from RNA-seq data, promoter regions from the Mus musculus GRCm38/mm10 genome annotation (Ensembl release 95) were coupled with featureCounts RNA-seq DESeq2 analysis output based on gene ID. __Figure 3H, Figure S3D,E,F__ The coordinates of double-strand break (DSB) hotspots were used from Lange et al., 2016, the DSB hotspots are sorted based on the annotated SPO11-oligo coverage per hotspot and the top 10% are visualised. __Figure 5A,B,C__
 
 
 ```
 ATAC-seq FASTQ
         │
-        ▼
+        V
 nf-core/atacseq
         │
-        ▼
-BAMs
-BigWigs
-MACS2 peaks
-        │
-        ▼
-Python notebooks
-        ├── Fragment length
-        ├── Accessibility
-        ├── DSB hotspots
-        ├── Promoters
-        └── Figure 3, Figure 4, Fig. S5
+        V
+       BAMs -> MACS2 peaks -> DeSeq2 -> HOMER assign to genomic features -> Visualisation (Changed accessibility peaks among genome features) (Figure S3C)
+        |
+        V
+Merged BAMs per condition -> Visualisation (Fragment length distribution) (Figure 2A, Figure S3A,B,I)
+        |
+        V
+     BigWigs -> Visualisation (ATACseq coverage in genomic bins) (Figure 3B,C,D,E,F; Figure S3H) + DSB hotspots (Figure 5A,B,C)
+        |
+        |-> Couple the accessibility of promoters with RNA abundance of correspondent genes (Figure 3H, Figure S3D,E,F)
 
 ```
 
