@@ -102,9 +102,6 @@ __Figure S3C__
 ### ANALYSIS 2    
 Distribution of ATACseq fragments by length for spermatocytes / MEFs
 
-Fragment length distributions were plotted as histograms of ATACseq reads using 1bp bins ranging from 0 to 800nt, with each bin representing the count of reads of a specific length for control and CHD1 cKO whole-genome samples (3 replicates merged). The blue curve represents the difference (CHD1 cKO − control) to better visualize the changes. CHD1 cKO is characterized with enrichment of reads corresponding to mononucleosome and dinucleosome regions (peaks at 220nt and 410nt, respectively).
-Mononucleosome peak: 220nt Dinucleosome peak: 410nt
-
 - merged bam files / separate bams      
 - bams for chrX and for chd3        
 - [Fragment length distribution histogram spermatocytes .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
@@ -115,18 +112,25 @@ __Figure 3A; Figure S3A,B__
 __Figure S3I__
 
 ### ANALYSIS 3    
-
-
+Chromatin accessibility in 2kb genomic bins
 
 Merged BigWig files         
 Genome annotation gtf        
 [Chromatin accessibility in genomic bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)     
 __Figure 3B,C,D__          
-Change on promoters          
+[Chromatin accessibility change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
+__Figure 3E__       
+[Chromatin accessibility change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
+__Figure 3F__    
+
 Merged BigWigs somatic cells    
-[Chromatin accessibility in genomic bins MEFs .ipynb]()      
+[Chromatin accessibility in genomic bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
-qiejfnj
+
+Chromatin accessibility at the 10% hottest DSB hotspots     
+
+
+
 
 
 
