@@ -88,7 +88,9 @@ Coverage and CPM normalisation
 
 ```
 
-ANALYSIS 1      
+### ANALYSIS 1    
+Distribution of changed accessibility peaks among genome features    
+
 - DeSeq2_output file    
 - [DeSeq2 preparations for HOMER .ipynb](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)     
 - [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)      
@@ -96,7 +98,12 @@ ANALYSIS 1
 __Figure S3C__
 
 
-ANALYSIS 2    
+### ANALYSIS 2    
+Distribution of ATACseq fragments by length for spermatocytes / MEFs
+
+Fragment length distributions were plotted as histograms of ATACseq reads using 1-bp bins ranging from 0 to 800nt, with each bin representing the count of reads of a specific length for control and CHD1 cKO whole-genome samples (3 replicates merged). The blue curve represents the difference (CHD1 cKO − control) to better visualize the changes. CHD1 cKO is characterized with enrichment of reads corresponding to mononucleosome and dinucleosome regions (peaks at 220nt and 410nt, respectively).
+Mononucleosome peak: 220nt Dinucleosome peak: 410nt
+
 - merged bam files / separate bams      
 - bams for chrX and for chd3        
 - [Fragment length distribution histogram spermatocytes .ipynb](Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
@@ -106,7 +113,7 @@ __Figure 3A; Figure S3A,B__
 - [Fragment length distribution histogram MEFs .ipynb](Fragment_length_distribution_somatic_new_norm.ipynb)      
 __Figure S3I__
 
-ANALYSIS 3      
+### ANALYSIS 3      
 
 
 
