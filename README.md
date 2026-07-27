@@ -107,19 +107,19 @@ Mononucleosome peak: 220nt Dinucleosome peak: 410nt
 
 - merged bam files / separate bams      
 - bams for chrX and for chd3        
-- [Fragment length distribution histogram spermatocytes .ipynb](Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
+- [Fragment length distribution histogram spermatocytes .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
 __Figure 3A; Figure S3A,B__
 - merged bam files from MEFs / separate bams
 - bams for chrX and chr3
-- [Fragment length distribution histogram MEFs .ipynb](Fragment_length_distribution_somatic_new_norm.ipynb)      
+- [Fragment length distribution histogram MEFs .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_somatic_new_norm.ipynb)      
 __Figure S3I__
 
 ### ANALYSIS 3      
 Merged BigWig files
 Genome annotation gtf
-[Chromatin accessibility in genomic bins]()       
+[Chromatin accessibility in genomic bins .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)       
 __Figure 3B,C,D__
-
+Change on promoters
 
 
 
