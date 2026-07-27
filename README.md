@@ -89,10 +89,10 @@ Coverage and CPM normalisation
 ```
 
 ANALYSIS 1      
-- [DeSeq2_output file]()    
-- [DeSeq2 preparations for HOMER .ipynb](HOMER_input_preparation.md)     
-- [HOMER_Output_FDR005](HOMER_deseq2_changed_005_out) / [HOMER_Output_FDR001](HOMER_deseq2_changed_001_out)      
-- [Changed accessibility peaks accross genome features visualisation .ipynb](HOMER_hist_DeSeq2_cleaned.ipynb)      
+- DeSeq2_output file    
+- [DeSeq2 preparations for HOMER .ipynb](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)     
+- [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)      
+- [Changed accessibility peaks accross genome features visualisation .ipynb](atac_seq/ANALYSIS_1/HOMER_hist_DeSeq2_cleaned.ipynb)      
 __Figure S3C__
 
 
@@ -103,6 +103,8 @@ ANALYSIS 2
 __Figure 3A; Figure S3A,B__
 - bam files from MEFs
 - [Fragment length distribution histogram MEFs .ipynb]()
+  __Figure S3I__
+
 
 
 
