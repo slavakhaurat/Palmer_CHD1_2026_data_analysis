@@ -97,13 +97,15 @@ __Figure S3C__
 
 
 ANALYSIS 2    
-- merged bam files      
+- merged bam files / separate bams      
 - bams for chrX and for chd3        
 - [Fragment length distribution histogram spermatocytes .ipynb](Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
 __Figure 3A; Figure S3A,B__
-- bam files from MEFs
-- [Fragment length distribution histogram MEFs .ipynb]()
+- merged bam files from MEFs / separate bams
+- bams for chrX and chr3
+- [Fragment length distribution histogram MEFs .ipynb](Fragment_length_distribution_somatic_new_norm.ipynb)
   __Figure S3I__
+- 
 
 
 
