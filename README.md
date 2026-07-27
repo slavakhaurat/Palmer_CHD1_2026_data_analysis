@@ -103,10 +103,10 @@ ANALYSIS 2
 __Figure 3A; Figure S3A,B__
 - merged bam files from MEFs / separate bams
 - bams for chrX and chr3
-- [Fragment length distribution histogram MEFs .ipynb](Fragment_length_distribution_somatic_new_norm.ipynb)
-  __Figure S3I__
-- 
+- [Fragment length distribution histogram MEFs .ipynb](Fragment_length_distribution_somatic_new_norm.ipynb)      
+__Figure S3I__
 
+ANALYSIS 3      
 
 
 
