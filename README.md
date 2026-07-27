@@ -127,7 +127,11 @@ Merged BigWigs somatic cells
 [Chromatin accessibility in genomic bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
 
-Chromatin accessibility at the 10% hottest DSB hotspots     
+[Chromatin accessibility in bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
+__Figure 5A__      
+DSB hotspots from De Lange file     
+[Chromatin accessibility change on the hottest DSB hotspots .ipynb]()      
+__Figure 5B__ 
 
 
 
