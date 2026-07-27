@@ -97,8 +97,10 @@ __Figure S3C__
 
 
 ANALYSIS 2    
-
-
+merged bam files
+bams for chrX and for chd3
+[Fragment length distribution histogram spermatocytes .ipynb]()      
+__Figure 3A; Figure S3A,B__
 
 
 
