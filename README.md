@@ -87,10 +87,11 @@ Coverage and CPM normalisation
         |-> Couple the accessibility of promoters with RNA abundance of correspondent genes (Figure 3H, Figure S3D,E,F)
 
 ```
-DeSeq2_output
+[DeSeq2_output]()    
+[DeSeq2 preparations for HOMER]()
 [HOMER_Output_FDR005](HOMER_deseq2_changed_005_out)     
 [HOMER_Output_FDR001](HOMER_deseq2_changed_001_out)      
-[Changed accessibility peaks accross genome features .ipynb](HOMER_hist_DeSeq2_cleaned.ipynb)      
+[Changed accessibility peaks accross genome features visualisation .ipynb](HOMER_hist_DeSeq2_cleaned.ipynb)      
 __Figure S3C__
 
 
