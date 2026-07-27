@@ -78,7 +78,7 @@ nf-core/atacseq
        BAMs -> MACS2 peaks -> DeSeq2 -> HOMER assign peaks to genomic features -> ANALYSIS 1 (Visualisation of changed accessibility peaks among genome features) (Figure S3C)
         |
         V
-Merged BAMs per condition -> ANALYSIS 2 (Fragment length distribution) (Figure 2A, Figure S3A,B,I)
+Merged BAMs per condition -> ANALYSIS 2 (Fragment length distribution histograms) (Figure 2A, Figure S3A,B,I)
         |
         V
 Coverage and CPM normalisation
@@ -89,12 +89,15 @@ Coverage and CPM normalisation
 ```
 
 ANALYSIS 1      
-- [DeSeq2_output]()    
-- [DeSeq2 preparations for HOMER](HOMER_input_preparation.md)     
-- [HOMER_Output_FDR005](HOMER_deseq2_changed_005_out)     
-- [HOMER_Output_FDR001](HOMER_deseq2_changed_001_out)      
+- [DeSeq2_output file]()    
+- [DeSeq2 preparations for HOMER .ipynb](HOMER_input_preparation.md)     
+- [HOMER_Output_FDR005](HOMER_deseq2_changed_005_out) / [HOMER_Output_FDR001](HOMER_deseq2_changed_001_out)      
 - [Changed accessibility peaks accross genome features visualisation .ipynb](HOMER_hist_DeSeq2_cleaned.ipynb)      
 __Figure S3C__
+
+
+ANALYSIS 2    
+
 
 
 
