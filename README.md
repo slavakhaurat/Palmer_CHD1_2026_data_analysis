@@ -114,18 +114,20 @@ __Figure S3I__
 ### ANALYSIS 3    
 Chromatin accessibility in 2kb genomic bins
 
-Merged BigWig files         
-Genome annotation gtf        
-[Chromatin accessibility in genomic bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)     
+- Merged BigWig files         
+- Genome annotation gtf        
+- [Chromatin accessibility in genomic bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)     
 __Figure 3B,C,D__          
-[Chromatin accessibility change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
+- [Chromatin accessibility change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
 __Figure 3E__       
-[Chromatin accessibility change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
+- [Chromatin accessibility change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
 __Figure 3F__    
 
-Merged BigWigs somatic cells    
-[Chromatin accessibility in genomic bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
+- Merged BigWigs somatic cells    
+- [Chromatin accessibility in genomic bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
+
+Chromatin accessibility over DSB hotspots
 
 [Chromatin accessibility in bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
 __Figure 5A__      
