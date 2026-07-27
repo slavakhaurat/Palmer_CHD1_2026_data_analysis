@@ -26,8 +26,8 @@ Visualisation with Python (Figure 2M)
 ```
 [Resulting abundance table .xlsm](histones_mass_spec/Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
 [Visualisation with Python .ipynb](histones_mass_spec/Mass_spec_Histones_main_3nd_cleaned.ipynb)      
-__Figure 2M__ Mass spectrometry analysis of acid-enriched histone protein preparations    
-- contains proteins (histones) abundance change CHD1iMN/Control
+__Figure 2M__     
+- contains proteins (histones) abundance change CHD1iMN / Control
 - change in detected histone modifications (PTMs) 
 
 ## RNA-seq data analysis
