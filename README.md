@@ -92,7 +92,8 @@ Coverage and CPM normalisation
 Distribution of changed accessibility peaks among genome features    
 
 - DeSeq2_output file    
-- [DeSeq2 preparations for HOMER .ipynb](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)     
+- [DeSeq2 preparations for HOMER .ipynb](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)
+- Genome annotation file used 
 - [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)      
 - [Changed accessibility peaks accross genome features visualisation .ipynb](atac_seq/ANALYSIS_1/HOMER_hist_DeSeq2_cleaned.ipynb)      
 __Figure S3C__
@@ -114,6 +115,10 @@ __Figure 3A; Figure S3A,B__
 __Figure S3I__
 
 ### ANALYSIS 3      
+Merged BigWig files
+Genome annotation gtf
+[Chromatin accessibility in genomic bins]()       
+__Figure 3B,C,D__
 
 
 
