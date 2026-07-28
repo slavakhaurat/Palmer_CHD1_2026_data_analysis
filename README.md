@@ -112,7 +112,7 @@ __Figure 3A; Figure S3A,B__
 __Figure S3I__
 
 ### ANALYSIS 3    
-Chromatin accessibility in 2kb genomic bins
+Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome | promoters | sex chromosomes
 
 - Merged BigWig files         
 - Genome annotation gtf        
@@ -121,8 +121,7 @@ __Figure 3B,C,D__
 - [Chromatin accessibility change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
 __Figure 3E__       
 - [Chromatin accessibility change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
-__Figure 3F__    
-
+__Figure 3F__
 - Merged BigWigs somatic cells    
 - [Chromatin accessibility in genomic bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
