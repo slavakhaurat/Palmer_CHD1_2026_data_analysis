@@ -116,7 +116,7 @@ Chromatin accessibility in 2kb genomic bins
 
 - Merged BigWig files         
 - Genome annotation gtf        
-- [Chromatin accessibility in genomic bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)     
+- [Chromatin accessibility in genomic bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)   
 __Figure 3B,C,D__          
 - [Chromatin accessibility change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
 __Figure 3E__       
