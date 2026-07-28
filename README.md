@@ -100,7 +100,7 @@ __Figure S3C__
 
 
 ### ANALYSIS 2    
-Distribution of ATACseq fragments by length for spermatocytes / MEFs
+Distribution of ATACseq fragments by length for spermatocytes | MEFs
 
 - merged bam files / separate bams      
 - bams for chrX and for chd3        
