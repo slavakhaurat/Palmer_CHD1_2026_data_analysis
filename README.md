@@ -116,25 +116,27 @@ Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome 
 
 - Merged BigWig files         
 - Genome annotation gtf        
-- [Chromatin accessibility in genomic bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)   
+- [Chromatin accessibility in 2kb bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)   
 __Figure 3B,C,D__          
-- [Chromatin accessibility change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
+- [Chromatin accessibility fold change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
 __Figure 3E__       
-- [Chromatin accessibility change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
+- [Chromatin accessibility fold change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
 __Figure 3F__
 - Merged BigWigs somatic cells    
-- [Chromatin accessibility in genomic bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
+- [Chromatin accessibility in 2kb bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
 
 Chromatin accessibility over DSB hotspots
 
-- [Chromatin accessibility in bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
+- [Chromatin accessibility in 2kb bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
 __Figure 5A__      
 - DSB hotspots from De Lange file     
-- [Chromatin accessibility change on the hottest DSB hotspots .ipynb](Chrom_access_change_DSB_hotspots.ipynb)      
+- [Chromatin accessibility fold change on the 10% hottest DSB hotspots .ipynb](Chrom_access_change_DSB_hotspots.ipynb)      
 __Figure 5B__      
-- [Pileups of the hottest DSB regions .ipynb](Pileups_Chrom_access_DSB_hotspots.ipynb)      
-__Figure 5C__     
+- [Pileups of the 10% hottest DSB regions .ipynb](Pileups_Chrom_access_DSB_hotspots.ipynb)      
+__Figure 5C__
+
+### ANALYSIS 4
 
 
 
