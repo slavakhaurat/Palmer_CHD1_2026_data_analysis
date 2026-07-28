@@ -128,12 +128,12 @@ __Figure S3H__
 
 Chromatin accessibility over DSB hotspots
 
-[Chromatin accessibility in bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
+- [Chromatin accessibility in bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
 __Figure 5A__      
-DSB hotspots from De Lange file     
-[Chromatin accessibility change on the hottest DSB hotspots .ipynb](Chrom_access_change_DSB_hotspots.ipynb)      
+- DSB hotspots from De Lange file     
+- [Chromatin accessibility change on the hottest DSB hotspots .ipynb](Chrom_access_change_DSB_hotspots.ipynb)      
 __Figure 5B__      
-[Pileups of the hottest DSB regions .ipynb](Pileups_Chrom_access_DSB_hotspots.ipynb)      
+- [Pileups of the hottest DSB regions .ipynb](Pileups_Chrom_access_DSB_hotspots.ipynb)      
 __Figure 5C__     
 
 
