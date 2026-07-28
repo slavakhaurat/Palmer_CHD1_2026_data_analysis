@@ -116,7 +116,7 @@ Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome 
 
 - Merged BigWig files         
 - Genome annotation gtf        
-- [Chromatin accessibility in 2kb bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins.ipynb)   
+- [Chromatin accessibility in 2kb bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins_spermatocytes.ipynb)   
 __Figure 3B,C,D__          
 - [Chromatin accessibility fold change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
 __Figure 3E__       
@@ -137,6 +137,8 @@ __Figure 5B__
 __Figure 5C__
 
 ### ANALYSIS 4
+
+
 
 
 
