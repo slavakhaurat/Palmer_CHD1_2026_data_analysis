@@ -116,14 +116,14 @@ Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome 
 
 - Merged BigWig files         
 - Genome annotation gtf        
-- [Chromatin accessibility in 2kb bins spermatocytes .ipynb](Chromatin_accessibility_in_genomic_bins_spermatocytes.ipynb)   
+- [Chromatin accessibility in 2kb bins spermatocytes .ipynb](atac_seq/ANALYSIS_3/Chromatin_accessibility_in_genomic_bins_spermatocytes.ipynb)   
 __Figure 3B,C,D__          
-- [Chromatin accessibility fold change on promoters .ipynb](Chrom_access_change_on_promoters_histogram.ipynb)      
+- [Chromatin accessibility fold change on promoters .ipynb](atac_seq/ANALYSIS_3/Chrom_access_change_on_promoters_histogram.ipynb)      
 __Figure 3E__       
-- [Chromatin accessibility fold change on sex chromosomes .ipynb](Chrom_access_change_sex_chromosomes.ipynb)     
+- [Chromatin accessibility fold change on sex chromosomes .ipynb](atac_seq/ANALYSIS_3/Chrom_access_change_sex_chromosomes.ipynb)     
 __Figure 3F__
 - Merged BigWigs somatic cells    
-- [Chromatin accessibility in 2kb bins MEFs .ipynb](Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
+- [Chromatin accessibility in 2kb bins MEFs .ipynb](atac_seq/ANALYSIS_3/Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
 
 Chromatin accessibility over DSB hotspots
