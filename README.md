@@ -1,7 +1,7 @@
 # Palmer_CHD1_2026_data_analysis
 
 ## Data and code availability
-RNA-seq data generated in this study have been deposited in the Gene Expression Omnibus (GEO) under accession number GSE336993. ATAC-seq data generated in this study have been deposited in GEO under accession number GSE337107. Proteomics datasets generated in this study have been deposited to the ProteomeXchange Consortium via the PRIDE repository under accession numbers PXD080429 and PXD080595. Processed data underlying the figures and custom analysis scripts are available from the Lead Contact upon reasonable request.
+RNA-seq data generated in this study have been deposited in the Gene Expression Omnibus (GEO) under accession number GSE336993. ATAC-seq data generated in this study have been deposited in GEO under accession number GSE337107. Proteomics datasets generated in this study have been deposited to the ProteomeXchange Consortium via the PRIDE repository under accession numbers PXD080429 and PXD080595. This page contains processed data and custom analysis scripts underlying the figures.
 
 ## Mass spectrometry data analysis of histones
 <details>
