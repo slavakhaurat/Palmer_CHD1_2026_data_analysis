@@ -173,7 +173,7 @@ joined with "gene_id"
 FeatureCounts cpm file
 DeSeq2 FDR00.1 to highlight points
 
-ATAC_RNA_correlation.ipynb
+[ATAC_RNA_correlation.ipynb](ATAC_RNA_correlation.ipynb)
 __Figure S3D,E,F__
 
 
