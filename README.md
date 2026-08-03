@@ -24,11 +24,11 @@ Resulting abundance table
 Visualisation with Python (Figure 2M)
 
 ```
-[Resulting abundance table .xlsm](histones_mass_spec/Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
-[Visualisation with Python .ipynb](histones_mass_spec/Mass_spec_Histones_main_3nd_cleaned.ipynb)      
+- [Resulting abundance table .xlsm](histones_mass_spec/Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
+- [Visualisation with Python .ipynb](histones_mass_spec/Mass_spec_Histones_main_3nd_cleaned.ipynb)      
 __Figure 2M__     
-- contains proteins (histones) abundance change CHD1iMN / Control
-- change in detected histone modifications (PTMs) 
+    - contains proteins (histones) abundance change CHD1iMN / Control
+    - change in detected histone modifications (PTMs) 
 
 ## RNA-seq data analysis
 <details>
@@ -154,6 +154,8 @@ genes_low_expressed: 1663
 genes_midlow_expressed: 16947
 genes_midhigh_expressed: 15010
 genes_high_expressed: 1697
+_____________________
+genes_expressed: 35317
 
 ```
 
@@ -165,7 +167,7 @@ __Figure S3D,E,F__
 
 - FeatureCounts cpm file
 - clean excel RNA_seq_annot_for_bbi
-- DeSeq2 FDR00.1 to highlight points
+- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv]()
 
 
 
