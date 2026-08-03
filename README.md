@@ -164,7 +164,9 @@ genes_high_expressed: 1698
 ```
 
 
-Relationship between promoter chromatin accessibility and RNA abundance of the corresponding genes in control spermatocytes. RNAseq abundance in control samples, expressed as TPM with zero values removed, is shown on the x-axis. ATACseq coverage at the corresponding promoters is shown on the y-axis, calculated in 2-kb bins centred on annotated transcription start sites. Both axes are plotted on a log2 scale, with linear values shown for clarity. Marginal histograms show the distributions of transcript abundance and promoter accessibility. The solid blue line indicates the least-squares regression fit, and r = 0.40 indicates the Pearson correlation coefficient.
+Graphs coupling the data between a promoter chromatin accessibility (ATACseq) and transcripts abundance of a corresponding gene (RNAseq): 
+[ATAC_RNA_correlation.ipynb](ATAC_RNA_correlation.ipynb)      
+__Figure S3D,E,F__
 
 GTF annotation - 
 RNA-seq feature counts (mean among replicates, no 0s)
@@ -173,8 +175,8 @@ joined with "gene_id"
 FeatureCounts cpm file
 DeSeq2 FDR00.1 to highlight points
 
-[ATAC_RNA_correlation.ipynb](ATAC_RNA_correlation.ipynb)
-__Figure S3D,E,F__
+Pearson's correlation coefficient (r) between log₂-transformed RNA-seq TPM (or exp/ctr ratio) and log₂-transformed ATAC-seq coverage (or exp/ctr ratio).
+
 
 
 
