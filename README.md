@@ -10,6 +10,7 @@ For peptide identification from DDA data, the RAW-files were loaded into Proteom
 </details>
 
 Mean abundance is calculated as an average of protein spectral areas among all samples. Spectral areas of proteins are comprised of spectral areas of detected peptides assigned to a protein and normalized for all proteins in a sample. Fold change is calculated as a ratio between the mean spectral areas of CHD1IMN samples and Control samples. Two samples per condition are analysed.
+
 ```
 Mass spectrometry of extracted histones
         |
@@ -28,6 +29,8 @@ Visualisation with Python (Figure 2M)
 __Figure 2M__     
     - contains proteins (histones) abundance change CHD1iMN / Control
     - change in detected histone modifications (PTMs) 
+
+
 
 ## RNA-seq data analysis
 <details>
@@ -51,10 +54,10 @@ DeSeq2 visualisation (Figure 3G)
 
 ```    
     
-[DESeq2_output file .tsv](atac_seq/ANALYSIS_4/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv)
-[Differentially expressed genes visualisation .ipynb]() (MA plot)        
+- [DESeq2_output file .tsv](atac_seq/ANALYSIS_4/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv)
+- [Differentially expressed genes visualisation .ipynb](rna_seq/Visualise_calculated_DeSeq2_FDR001.ipynb) (MA plot)        
 __Figure 3G__
-
+                      
 
 
 ## ATAC-seq data analysis from spermatocytes and MEFs
