@@ -84,7 +84,7 @@ Merged BAMs per condition -> ANALYSIS 2 (Fragment length distribution histograms
 Coverage and CPM normalisation
      BigWigs -> ANALYSIS 3 (ATACseq coverage in genomic bins) (Figure 3B,C,D,E,F; Figure S3H) + DSB hotspots (Figure 5A,B,C)
         |
-        |-> ANALYSIS 4 To couple the accessibility of promoters with RNA abundance of correspondent genes (Figure 3H, Figure S3D,E,F)
+        |-> ANALYSIS 4 (Chromatin accessibility of promoters correlated with RNA abundance of the correspondent genes) (Figure 3H, Figure S3D,E,F)
 
 ```
 
@@ -137,16 +137,17 @@ __Figure 5B__
 __Figure 5C__
 
 ### ANALYSIS 4
+Chromatin accessibility of promoters correlated with RNA abundance of the correspondent genes
 
-[Pileups of ATACseq coverage on promoters sorted by their RNA abundance .ipynb]()       
+- [Pileups of ATACseq coverage on promoters sorted by their RNA abundance .ipynb]()       
 __Figure 3H__
 
 ```
-genes_unexpressed = RNA_seq_annot_for_bbi[RNA_seq_annot_for_bbi['tpm_ctr'] < 0.0001]
-genes_low_expressed = RNA_seq_annot_for_bbi[(RNA_seq_annot_for_bbi['tpm_ctr'] > 0.0001) & (RNA_seq_annot_for_bbi['tpm_ctr'] < 0.01)]
-genes_midlow_expressed = RNA_seq_annot_for_bbi[(RNA_seq_annot_for_bbi['tpm_ctr'] > 0.01) & (RNA_seq_annot_for_bbi['tpm_ctr'] < 1)]
-genes_midhigh_expressed = RNA_seq_annot_for_bbi[(RNA_seq_annot_for_bbi['tpm_ctr'] > 1) & (RNA_seq_annot_for_bbi['tpm_ctr'] < 100)]
-genes_high_expressed = RNA_seq_annot_for_bbi[RNA_seq_annot_for_bbi['tpm_ctr'] > 100]
+genes_unexpressed (tpm_ctr < 0.0001)
+genes_low_expressed (0.0001 < tpm_ctr < 0.01)
+genes_midlow_expressed (0.01 < tpm_ctr < 1)
+genes_midhigh_expressed (1 < tpm_ctr < 100)
+genes_high_expressed (100 < tpm_ctr)
 
 genes_unexpressed: 19398
 genes_low_expressed: 1663
@@ -156,19 +157,17 @@ genes_high_expressed: 1697
 
 ```
 
-
-Graphs coupling the data between a promoter chromatin accessibility (ATACseq) and transcripts abundance of a corresponding gene (RNAseq): 
+- Graphs coupling the data between a promoter chromatin accessibility (ATACseq) and transcripts abundance of a corresponding gene (RNAseq): 
 [ATAC_RNA_correlation.ipynb](ATAC_RNA_correlation.ipynb)      
 __Figure S3D,E,F__
+    - mm10 gtf annotation is coupled with FeatureCounts output of RNAseq based on "gene_id"
+    - Pearson's correlation coefficient (r) was calculated between RNAseq log2(TPM) and log2(ATACseq coverage); or log2(fold change (exp/control ratio)).
 
-GTF annotation - 
-RNA-seq feature counts (mean among replicates, no 0s)
-joined with "gene_id"
+- FeatureCounts cpm file
+- clean excel RNA_seq_annot_for_bbi
+- DeSeq2 FDR00.1 to highlight points
 
-FeatureCounts cpm file
-DeSeq2 FDR00.1 to highlight points
 
-Pearson's correlation coefficient (r) between log₂-transformed RNA-seq TPM (or exp/ctr ratio) and log₂-transformed ATAC-seq coverage (or exp/ctr ratio).
 
 
 
