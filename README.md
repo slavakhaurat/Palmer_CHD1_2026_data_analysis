@@ -10,7 +10,6 @@ For peptide identification from DDA data, the RAW-files were loaded into Proteom
 </details>
 
 Mean abundance is calculated as an average of protein spectral areas among all samples. Spectral areas of proteins are comprised of spectral areas of detected peptides assigned to a protein and normalized for all proteins in a sample. Fold change is calculated as a ratio between the mean spectral areas of CHD1IMN samples and Control samples. Two samples per condition are analysed.
-
 ```
 Mass spectrometry of extracted histones
         |
@@ -35,25 +34,29 @@ __Figure 2M__
 <summary>from Methods</summary>
 Following STA-PUT isolation of enriched spermatocyte (F2) fractions as detailed above. Cell pellets of 1 million cells were resuspended in 1ml of PBS. 100µl was separated, pelleted (600RCF for 5 minutes) and the resultant cell pellet was snap-frozen for Western blot analysis of CHD1 protein levels. The remaining 800µl was washed in PBS and pelleted (600RCF for 5 minutes). 500µl of TRI-reagent (Sigma-Aldrich, CAT# T9424) was used to resuspend each pellet and this cell solution was immediately snap-frozen for later processing.  Nucleic acids were separated via addition of 200µl chloroform (Merck # 1024451000) and vortexing the mixture. After centrifugation (15 minutes, 21,000RCF at 4oC) the aqueous phase was transferred to a new tube and another 200µl of chloroform was added. The mixture was vortexed and spun again (15 minutes, 21,000RCF at 4oC). The aqueous phase was transferred to a new tube and 500 µl of isopropanol was added. This solution was vortexed and left for 10 minutes at room temperature for nucleic acids to precipitate. The precipitate was then pelleted via centrifugation (30 minutes, 21,000RCF at 4oC). The resultant pellet was washed with 75% Ethanol and left to air dry. When dry the pellet was resuspended in 43µl of RNase- and DNase-free DEPC-Treated Water (Thermofisher, # AM9906). Next, DNA was removed from the sample via the addition of DNase I buffer (ThermoScientific # B43) to a final concentration of 1X together with 1U DNase I (ThermoScientific # EN0525) and 40U RiboLock RNase inhibitor (ThermoScientific #EO0382). This was left to incubate for 20 minutes at 37oC. Next, the volume was topped up to 100µl and 200µl Phenol:Chloroform:Isoamyl alcohol 25:24:1 (Merck, CAT #P3803) was added. This solution was moved to a phase lock gel heavy tube (QuantaBio (# 2302830 – Now discontinued), this was then vortexed and spun down (30 minutes, 21,000RCF at 4oC). The aqueous phase was transferred to a new tube and 10 µl of 3M NaAc, 1 µL glycogen RNA-grade, 10mg/ml (ThermoScientific # R0551) and 300 µL ice-cold 100% EtOH was added. This solution was vortexed and RNA was left to precipitate at -80oC for 1 hour. The precipitated RNA was pelleted (45 minutes, 21,000RCF at 4oC). The resultant pellet was then washed 1X with 80% ethanol and 2X with 75% ethanol with associated centrifugation steps (15 minutes, 21,000RCF at 4oC). After the final wash the solution was sun down one final time (10 minutes, 21,000RCF at 4oC), the supernatant was discarded and the pellet was air-dried for 5 minutes. The pellet was then resuspended in 30µl of 1X TE buffer (Invitrogen #T11493). Libraries were prepared from total RNA using a stranded mRNA-seq library preparation protocol with poly(A) enrichment, fragmentation, cDNA synthesis, adapter ligation, indexing, and PCR amplification.
 </details>
-RNA-seq data were processed using the nf-core/rnaseq pipeline implemented in Nextflow 120. Adapter trimming was performed using Trim Galore! 121, reads mapping to abundant RNA species including rRNA were removed using Bowtie2 122, and filtered reads were aligned to the mouse reference genome (Ensembl GRCm38/mm10) using STAR 123. Gene-level read counts were generated using featureCounts 124, and differential gene expression analysis was performed using DESeq2 125 using at least three biological replicates per genotype. Genes with adjusted p-values (Benjamini-Hochberg corrected) of padj < 0.01 (FDR < 1%) were considered differentially expressed.
+RNAseq data were processed using the nf-core/rnaseq pipeline implemented in Nextflow. Adapter trimming was performed using Trim Galore!, reads mapping to abundant RNA species including rRNA were removed using Bowtie2, and filtered reads were aligned to the mouse reference genome (Ensembl GRCm38/mm10) using STAR. Gene-level read counts were generated using FeatureCounts, and differential gene expression analysis was performed using DESeq2 using at least three biological replicates per genotype. Genes with adjusted p-values (Benjamini-Hochberg corrected) of padj < 0.01 (FDR < 1%) were considered differentially expressed.       
 
 ```
-RNA-seq FASTQ
+  RNAseq data
         │
-        ▼
+        V
 nf-core/rnaseq
         │
-        ▼
-Counts + DESeq2
+        V
+ FeatureCounts
+     DESeq2
         │
-        ▼
-Python notebooks
-        ├── Differential expression
-        ├── MA plot
-        ├── Promoter expression
-        └── Figure 2, Fig. S3
+        V
+DeSeq2 visualisation (Figure 3G)
 
 ```
+
+Distribution of changed accessibility peaks among genome features    
+
+- DeSeq2_output file    
+- DeSeq2 output visualisation / Differentially expressed genes visualisation
+
+__Figure 3G__
 
 
 ## ATAC-seq data analysis from spermatocytes and MEFs
@@ -67,9 +70,8 @@ For ATAC-seq experiments performed on STA-PUT-purified spermatocyte F2 fractions
 - Libraries were sequenced on an Illumina NextSeq 550 platform using paired-end 75 bp reads, using the digitonin conditions provided with the kit. ATAC-seq data were processed using the nf-core/atacseq pipeline implemented in Nextflow 120. Adapter trimming and quality filtering were performed using Trim Galore! 121, reads were aligned to the mouse reference genome (GRCm38/mm10) using BWA-MEM 126, and mitochondrial reads, PCR duplicates, and low-quality alignments were removed using SAMtools 127 and Picard. To perform differential chromatin accessibility analysis, peaks were called for each replicate using MACS2 v2.2.7.1 128, the resulting files were assessed using DESeq2 125 to compare control and Chd1iMN conditions. The differentially accessible regions (FDR < 5%) were assigned to genome features using HOMER v4.10 129 and the same Ensembl release of Mus musculus GRCm38/mm10 genome annotation.__ANALYSIS 1__ __Figure S3C__ To visualize the fragment length distribution, unnormalized alignment files were merged per condition and the histograms were generated with number of fragments normalized to one million mapped fragments within each condition.__ANALYSIS 2__ __Figure 3A; Figure S3A,B,I__      
 - Genome-wide ATAC-seq coverage tracks were generated from the merged alignment files for each condition using bamCoverage from deepTools v3.4.3 130, CPM method was used to normalize the coverage. To visualise the genome-wide chromatin accessibility in genomic bins, ATAC-seq coverage was calculated for each 2kb genomic bin using the merged and normalized BigWig files and plotted as a scatterplot for both conditions. Bins from sex chromosomes and bins overlapping annotated transcription start sites were highlighted with color. Gene annotations were obtained from Ensembl release 95 for the Mus musculus GRCm38/mm10 genome assembly. __Figure 3B,C,D,E,F; Figure S3H__ To couple the promoter accessibility derived from ATAC-seq and RNA abundance derived from RNA-seq data, promoter regions from the Mus musculus GRCm38/mm10 genome annotation (Ensembl release 95) were coupled with featureCounts RNA-seq DESeq2 analysis output based on gene ID. __Figure 3H, Figure S3D,E,F__ The coordinates of double-strand break (DSB) hotspots were used from Lange et al., 2016, the DSB hotspots are sorted based on the annotated SPO11-oligo coverage per hotspot and the top 10% are visualised. __Figure 5A,B,C__
 
-
 ```
-ATAC-seq FASTQ
+ ATACseq data
         │
         V
 nf-core/atacseq
