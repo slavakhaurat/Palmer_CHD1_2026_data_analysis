@@ -139,7 +139,7 @@ __Figure 5C__
 ### ANALYSIS 4
 Chromatin accessibility of promoters correlated with RNA abundance of the correspondent genes
 
-- [Pileups of ATACseq coverage on promoters sorted by their RNA abundance .ipynb]()       
+- [Pileups of ATACseq coverage on promoters sorted by their RNA abundance .ipynb](atac_seq/ANALYSIS_4/Pileups_ATAC_promoters_RNA_sorting.ipynb)       
 __Figure 3H__
 
 ```
@@ -160,13 +160,15 @@ genes_expressed: 35317
 ```
 
 - Graphs coupling the data between a promoter chromatin accessibility (ATACseq) and transcripts abundance of a corresponding gene (RNAseq): 
-[ATAC_RNA_correlation.ipynb](ATAC_RNA_correlation.ipynb)      
+[ATAC_RNA_correlation.ipynb](atac_seq/ANALYSIS_4/ATAC_RNA_correlation.ipynb)      
 __Figure S3D,E,F__
     - mm10 gtf annotation is coupled with FeatureCounts output of RNAseq based on "gene_id"
     - Pearson's correlation coefficient (r) was calculated between RNAseq log2(TPM) and log2(ATACseq coverage); or log2(fold change (exp/control ratio)).
 
-- [RNAseq FeatureCounts output .tsv](featurecounts.cpm.gene.mean.tsv) -> Duplicates and 0s removed, cpm converted into TPM [RNA_FeatureCounts_mean_no0_c.xlsx](RNA_FeatureCounts_mean_no0_c.xlsx)
-- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv](DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv) To highlight the points in Figure S3F
+Files used:
+
+- [RNAseq FeatureCounts output .tsv](atac_seq/ANALYSIS_4/featurecounts.cpm.gene.mean.tsv) -> Duplicates and 0s removed, cpm converted into TPM [RNA_FeatureCounts_mean_no0_c.xlsx](atac_seq/ANALYSIS_4/RNA_FeatureCounts_mean_no0_c.xlsx)
+- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv](atac_seq/ANALYSIS_4/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv) To highlight the points in Figure S3F
 - mm10 gtf annotation
 
 
