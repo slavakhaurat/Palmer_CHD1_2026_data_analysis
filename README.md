@@ -140,6 +140,42 @@ __Figure 5C__
 
 *can't find the exact notebook with stranded pileups of promoters. The closest is user_uladzis_khauratovich/Pileups_ATAC_promoters_Figure3.ipynb rewrite it?* __Figure 3H__
 
+```
+genes_unexpressed = RNA_seq_annot_for_bbi[RNA_seq_annot_for_bbi['tpm_ctr'] < 0.0001]
+genes_low_expressed = RNA_seq_annot_for_bbi[(RNA_seq_annot_for_bbi['tpm_ctr'] > 0.0001) & (RNA_seq_annot_for_bbi['tpm_ctr'] < 0.01)]
+genes_midlow_expressed = RNA_seq_annot_for_bbi[(RNA_seq_annot_for_bbi['tpm_ctr'] > 0.01) & (RNA_seq_annot_for_bbi['tpm_ctr'] < 1)]
+genes_midhigh_expressed = RNA_seq_annot_for_bbi[(RNA_seq_annot_for_bbi['tpm_ctr'] > 1) & (RNA_seq_annot_for_bbi['tpm_ctr'] < 100)]
+genes_high_expressed = RNA_seq_annot_for_bbi[RNA_seq_annot_for_bbi['tpm_ctr'] > 100]
+
+genes_unexpressed: 2
+genes_low_expressed: 1322
+genes_midlow_expressed: 15119
+genes_midhigh_expressed: 14896
+genes_high_expressed: 1698
+
+
+# TSS_new_changed = RNA_seq_annot_for_bbi[RNA_seq_annot_for_bbi['ATAC_change'] > 1.638]
+# TSS_new_unchanged = RNA_seq_annot_for_bbi[RNA_seq_annot_for_bbi['ATAC_change'] < 1.638]
+
+
+# TSS_new_changed.to_csv('/users/uladzis.khauratovich/groups_SLAVA/ATAC_Seq/ATAC_RNA_Seq/Changed_tss_expressed_genes_files/TSS_new_changed.bed', sep='\t', index=False)
+# TSS_new_unchanged.to_csv('/users/uladzis.khauratovich/groups_SLAVA/ATAC_Seq/ATAC_RNA_Seq/Changed_tss_expressed_genes_files/TSS_new_unchanged.bed', sep='\t', index=False)
+
+```
+
+
+Relationship between promoter chromatin accessibility and RNA abundance of the corresponding genes in control spermatocytes. RNAseq abundance in control samples, expressed as TPM with zero values removed, is shown on the x-axis. ATACseq coverage at the corresponding promoters is shown on the y-axis, calculated in 2-kb bins centred on annotated transcription start sites. Both axes are plotted on a log2 scale, with linear values shown for clarity. Marginal histograms show the distributions of transcript abundance and promoter accessibility. The solid blue line indicates the least-squares regression fit, and r = 0.40 indicates the Pearson correlation coefficient.
+
+GTF annotation - 
+RNA-seq feature counts (mean among replicates, no 0s)
+joined with "gene_id"
+
+FeatureCounts cpm file
+DeSeq2 FDR00.1 to highlight points
+
+ATAC_RNA_correlation.ipynb
+__Figure S3D,E,F__
+
 
 
 
