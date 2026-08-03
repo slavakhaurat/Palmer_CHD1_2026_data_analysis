@@ -94,12 +94,15 @@ Coverage and CPM normalisation
 ### ANALYSIS 1    
 Distribution of changed accessibility peaks among genome features    
 
-- DeSeq2_output file    
-- [DeSeq2 preparations for HOMER .ipynb](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)
-- Genome annotation file used 
-- [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)      
 - [Changed accessibility peaks accross genome features visualisation .ipynb](atac_seq/ANALYSIS_1/HOMER_hist_DeSeq2_cleaned.ipynb)      
 __Figure S3C__
+
+Files used:
+- [DeSeq2_output file FDR001 .bed](atac_seq/ANALYSIS_1/controlvsexperimental.mRp.clN.deseq2.FDR0.01.results.bed) and [DeSeq2_FDR005](atac_seq/ANALYSIS_1/controlvsexperimental.mRp.clN.deseq2.FDR0.05.results.bed)    
+- [Create input file for HOMER](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)
+- Genome annotation file used 
+- [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)      
+
 
 
 ### ANALYSIS 2    
