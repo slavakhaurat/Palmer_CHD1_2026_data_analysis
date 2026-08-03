@@ -49,14 +49,12 @@ nf-core/rnaseq
         V
 DeSeq2 visualisation (Figure 3G)
 
-```
-
-Distribution of changed accessibility peaks among genome features    
-
-- DeSeq2_output file    
-- DeSeq2 output visualisation / Differentially expressed genes visualisation
-
+```    
+    
+[DESeq2_output file .tsv](atac_seq/ANALYSIS_4/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv)
+[Differentially expressed genes visualisation .ipynb]() (MA plot)        
 __Figure 3G__
+
 
 
 ## ATAC-seq data analysis from spermatocytes and MEFs
