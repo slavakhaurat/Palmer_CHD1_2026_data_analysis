@@ -165,9 +165,9 @@ __Figure S3D,E,F__
     - mm10 gtf annotation is coupled with FeatureCounts output of RNAseq based on "gene_id"
     - Pearson's correlation coefficient (r) was calculated between RNAseq log2(TPM) and log2(ATACseq coverage); or log2(fold change (exp/control ratio)).
 
-- FeatureCounts cpm file
-- clean excel RNA_seq_annot_for_bbi
-- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv]()
+- [RNAseq FeatureCounts output .tsv](featurecounts.cpm.gene.mean.tsv) -> Duplicates and 0s removed, cpm converted into TPM [RNA_FeatureCounts_mean_no0_c.xlsx](RNA_FeatureCounts_mean_no0_c.xlsx)
+- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv](DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv) To highlight the points in Figure S3F
+- mm10 gtf annotation
 
 
 
