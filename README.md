@@ -54,7 +54,7 @@ DeSeq2 visualisation (Figure 3G)
 
 ```    
     
-- [DESeq2_output file .tsv](atac_seq/ANALYSIS_4/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv)
+- [DESeq2_output file .tsv](rna_seq/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv)
 - [Differentially expressed genes visualisation .ipynb](rna_seq/Visualise_calculated_DeSeq2_FDR001.ipynb) (MA plot)        
 __Figure 3G__
                       
@@ -173,8 +173,8 @@ __Figure S3D,E,F__
 
 Files used:
 
-- [RNAseq FeatureCounts output .tsv](atac_seq/ANALYSIS_4/featurecounts.cpm.gene.mean.tsv) -> Duplicates and 0s removed, cpm converted into TPM [RNA_FeatureCounts_mean_no0_c.xlsx](atac_seq/ANALYSIS_4/RNA_FeatureCounts_mean_no0_c.xlsx)
-- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv](atac_seq/ANALYSIS_4/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv) To highlight the points in Figure S3F
+- [RNAseq FeatureCounts output .tsv](rna_seq/featurecounts.cpm.gene.mean.tsv) -> Duplicates and 0s removed, cpm converted into TPM [RNA_FeatureCounts_mean_no0_c.xlsx](atac_seq/ANALYSIS_4/RNA_FeatureCounts_mean_no0_c.xlsx)
+- [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv](rna_seq/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv) To highlight the points in Figure S3F
 - mm10 gtf annotation
 
 
