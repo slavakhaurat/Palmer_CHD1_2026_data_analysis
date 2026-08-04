@@ -133,12 +133,12 @@ __Figure S3H__
 
 Chromatin accessibility over DSB hotspots
 
-- [Chromatin accessibility in 2kb bins at the 10% hottest DSB hotspots .ipynb](Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
+- [Chromatin accessibility in 2kb bins at the 10% hottest DSB hotspots .ipynb](atac_seq/ANALYSIS_3/Chrom_access_in_bins_DSB_hotspots.ipynb) (*redundant code*)    
 __Figure 5A__      
-- [DSB hotspots from De Lange .xlsx](SPO11-oligos_hotspots_NIHMS819055-supplement-9_modif.xlsx)     
-- [Chromatin accessibility fold change on the 10% hottest DSB hotspots .ipynb](Chrom_access_change_DSB_hotspots.ipynb)      
+- [DSB hotspots from Lange et.al. 2016 .xlsx](atac_seq/ANALYSIS_3/SPO11-oligos_hotspots_NIHMS819055-supplement-9_modif.xlsx)     
+- [Chromatin accessibility fold change on the 10% hottest DSB hotspots .ipynb](atac_seq/ANALYSIS_3/Chrom_access_change_DSB_hotspots.ipynb)      
 __Figure 5B__      
-- [Pileups of the 10% hottest DSB regions .ipynb](Pileups_Chrom_access_DSB_hotspots.ipynb)      
+- [Pileups of the 10% hottest DSB regions .ipynb](atac_seq/ANALYSIS_3/Pileups_Chrom_access_DSB_hotspots.ipynb)      
 __Figure 5C__
 
 ### ANALYSIS 4
