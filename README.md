@@ -57,7 +57,7 @@ DeSeq2 visualisation (Figure 3G)
 - [DESeq2_output file .tsv](rna_seq/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv)
 - [Differentially expressed genes visualisation .ipynb](rna_seq/Visualise_calculated_DeSeq2_FDR001.ipynb) (MA plot)        
 __Figure 3G__
-    - [RNAseq FeatureCounts output .tsv](rna_seq/featurecounts.cpm.gene.mean.tsv) used in __Figure S3D,E,F__ described in [atac_seq ANALYSIS_4](main#analysis-4)
+    - [RNAseq FeatureCounts output .tsv](rna_seq/featurecounts.cpm.gene.mean.tsv) used in __Figure S3D,E,F__ described in [atac_seq ANALYSIS_4](https://github.com/slavakhaurat/Palmer_CHD1_2026_data_analysis/tree/main#analysis-4)
                       
 
 
