@@ -120,7 +120,7 @@ __Figure S3I__
 Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome | promoters | sex chromosomes
 
 - Merged BigWig files         
-- [Simplified GTF mm10_GRCm38_95 file .csv](atac_seq/ANALYSIS_3/Mus_musculus_GTF_genes_short_GRCm38_95.csv)        
+- [Simplified mm10_GRCm38_95 annotation file .csv](atac_seq/ANALYSIS_3/Mus_musculus_GTF_genes_short_GRCm38_95.csv)        
 - [Chromatin accessibility in 2kb bins spermatocytes .ipynb](atac_seq/ANALYSIS_3/Chromatin_accessibility_in_genomic_bins_spermatocytes.ipynb)   
 __Figure 3B,C,D__          
 - [Chromatin accessibility fold change on promoters .ipynb](atac_seq/ANALYSIS_3/Chrom_access_change_on_promoters_histogram.ipynb)      
@@ -167,14 +167,15 @@ genes_expressed: 35317
 - Graphs coupling the data between a promoter chromatin accessibility (ATACseq) and transcripts abundance of a corresponding gene (RNAseq): 
 [ATAC_RNA_correlation.ipynb](atac_seq/ANALYSIS_4/ATAC_RNA_correlation.ipynb)      
 __Figure S3D,E,F__
-    - mm10 gtf annotation is coupled with FeatureCounts output of RNAseq based on "gene_id"
+    - mm10 annotation is coupled with FeatureCounts output of RNAseq based on "gene_id"
     - Pearson's correlation coefficient (r) was calculated between RNAseq log2(TPM) and log2(ATACseq coverage); or log2(fold change (exp/control ratio)).
 
 Files used:
 
 - [RNAseq FeatureCounts output .tsv](rna_seq/featurecounts.cpm.gene.mean.tsv) -> Duplicates and 0s removed, cpm converted into TPM [RNA_FeatureCounts_mean_no0_c.xlsx](atac_seq/ANALYSIS_4/RNA_FeatureCounts_mean_no0_c.xlsx)
 - [DESeq2_RNAseq.Experimental_VS_Control.FDR001.tsv](rna_seq/DESeq2_1.18.1.Experimental_VS_Control.alpha01.tsv) To highlight the points in Figure S3F
-- mm10 gtf annotation
+- [Simplified mm10_GRCm38_95 annotation file .csv](atac_seq/ANALYSIS_3/Mus_musculus_GTF_genes_short_GRCm38_95.csv)
+
 
 
 
