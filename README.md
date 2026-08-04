@@ -32,7 +32,7 @@ __Figure 2M__
 
 
 
-## RNA-seq data analysis
+## RNAseq data analysis
 <details>
 <summary>Laboratory experiment methods</summary>
 Following STA-PUT isolation of enriched spermatocyte (F2) fractions as detailed above. Cell pellets of 1 million cells were resuspended in 1ml of PBS. 100µl was separated, pelleted (600RCF for 5 minutes) and the resultant cell pellet was snap-frozen for Western blot analysis of CHD1 protein levels. The remaining 800µl was washed in PBS and pelleted (600RCF for 5 minutes). 500µl of TRI-reagent (Sigma-Aldrich, CAT# T9424) was used to resuspend each pellet and this cell solution was immediately snap-frozen for later processing.  Nucleic acids were separated via addition of 200µl chloroform (Merck # 1024451000) and vortexing the mixture. After centrifugation (15 minutes, 21,000RCF at 4oC) the aqueous phase was transferred to a new tube and another 200µl of chloroform was added. The mixture was vortexed and spun again (15 minutes, 21,000RCF at 4oC). The aqueous phase was transferred to a new tube and 500 µl of isopropanol was added. This solution was vortexed and left for 10 minutes at room temperature for nucleic acids to precipitate. The precipitate was then pelleted via centrifugation (30 minutes, 21,000RCF at 4oC). The resultant pellet was washed with 75% Ethanol and left to air dry. When dry the pellet was resuspended in 43µl of RNase- and DNase-free DEPC-Treated Water (Thermofisher, # AM9906). Next, DNA was removed from the sample via the addition of DNase I buffer (ThermoScientific # B43) to a final concentration of 1X together with 1U DNase I (ThermoScientific # EN0525) and 40U RiboLock RNase inhibitor (ThermoScientific #EO0382). This was left to incubate for 20 minutes at 37oC. Next, the volume was topped up to 100µl and 200µl Phenol:Chloroform:Isoamyl alcohol 25:24:1 (Merck, CAT #P3803) was added. This solution was moved to a phase lock gel heavy tube (QuantaBio (# 2302830 – Now discontinued), this was then vortexed and spun down (30 minutes, 21,000RCF at 4oC). The aqueous phase was transferred to a new tube and 10 µl of 3M NaAc, 1 µL glycogen RNA-grade, 10mg/ml (ThermoScientific # R0551) and 300 µL ice-cold 100% EtOH was added. This solution was vortexed and RNA was left to precipitate at -80oC for 1 hour. The precipitated RNA was pelleted (45 minutes, 21,000RCF at 4oC). The resultant pellet was then washed 1X with 80% ethanol and 2X with 75% ethanol with associated centrifugation steps (15 minutes, 21,000RCF at 4oC). After the final wash the solution was sun down one final time (10 minutes, 21,000RCF at 4oC), the supernatant was discarded and the pellet was air-dried for 5 minutes. The pellet was then resuspended in 30µl of 1X TE buffer (Invitrogen #T11493). Libraries were prepared from total RNA using a stranded mRNA-seq library preparation protocol with poly(A) enrichment, fragmentation, cDNA synthesis, adapter ligation, indexing, and PCR amplification.
@@ -61,7 +61,7 @@ __Figure 3G__
                       
 
 
-## ATAC-seq data analysis from spermatocytes and MEFs
+## ATACseq data analysis from spermatocytes and MEFs
 
 <details>
 <summary>Laboratory experiment methods</summary>   
@@ -100,21 +100,19 @@ __Figure S3C__
 
 Files used:
 - [DeSeq2_output file FDR001 .bed](atac_seq/ANALYSIS_1/controlvsexperimental.mRp.clN.deseq2.FDR0.01.results.bed) and [DeSeq2_FDR005](atac_seq/ANALYSIS_1/controlvsexperimental.mRp.clN.deseq2.FDR0.05.results.bed)    
-- [Create input file for HOMER](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)
-- Genome annotation file used 
-- [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)      
-
+- [Instructions to create input file for HOMER](atac_seq/ANALYSIS_1/HOMER_input_preparation.md)
+- [HOMER_Output_FDR005](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_005_out.tsv) / [HOMER_Output_FDR001](atac_seq/ANALYSIS_1/HOMER_deseq2_changed_001_out.tsv)
+- Mouse genome annotation (GTF, mm10/GRCm38), from the NIH Reference Genomes database: [Mus_musculus.GRCm38.95.chr.gtf](https://hpc.nih.gov/refdb/dbview.php?id=571)
+      
 
 
 ### ANALYSIS 2    
 Distribution of ATACseq fragments by length for spermatocytes | MEFs
 
 - merged bam files / separate bams      
-- bams for chrX and for chd3        
 - [Fragment length distribution histogram spermatocytes .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
 __Figure 3A; Figure S3A,B__
 - merged bam files from MEFs / separate bams
-- bams for chrX and chr3
 - [Fragment length distribution histogram MEFs .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_somatic_new_norm.ipynb)      
 __Figure S3I__
 
