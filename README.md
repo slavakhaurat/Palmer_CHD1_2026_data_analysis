@@ -122,7 +122,7 @@ __Figure S3I__
 Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome | promoters | sex chromosomes
 
 - Merged BigWig files         
-- Genome annotation gtf        
+- [Simplified GTF mm10_GRCm38_95 file .csv](atac_seq/ANALYSIS_3/Mus_musculus_GTF_genes_short_GRCm38_95.csv)        
 - [Chromatin accessibility in 2kb bins spermatocytes .ipynb](atac_seq/ANALYSIS_3/Chromatin_accessibility_in_genomic_bins_spermatocytes.ipynb)   
 __Figure 3B,C,D__          
 - [Chromatin accessibility fold change on promoters .ipynb](atac_seq/ANALYSIS_3/Chrom_access_change_on_promoters_histogram.ipynb)      
