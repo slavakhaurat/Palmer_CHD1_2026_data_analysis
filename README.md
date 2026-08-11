@@ -27,7 +27,7 @@ Visualisation with Python (Figure 2M)
 - [Resulting abundance table .xlsm](histones_mass_spec/Khauratovich_Goloborodko_IMBA_ID2045_20250423_E4_insol_Urea_ArgC_2x2runs_mouse_histones_Top100_quanOnAll_v2.xlsm)   
 - [Visualisation with Python .ipynb](histones_mass_spec/Mass_spec_Histones_main_3nd_cleaned.ipynb)      
 __Figure 2M__     
-    - contains proteins (histones) abundance change CHD1iMN / Control
+    - contains proteins (histones) abundance change CHD1 cKO / Control
     - change in detected histone modifications (PTMs) 
 
 
@@ -109,17 +109,17 @@ Files used:
 ### ANALYSIS 2    
 Distribution of ATACseq fragments by length for spermatocytes | MEFs
 
-- merged bam files / separate bams (to upload in Zenodo)    
+- merged bam files (per condition)   
 - [Fragment length distribution histogram spermatocytes .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_whole_genome_sex_chroms_new_norm.ipynb)      
 __Figure 3A; Figure S3A,B__
-- merged bam files from MEFs / separate bams (to upload in Zenodo)
+- merged bam files from MEFs (per condition)
 - [Fragment length distribution histogram MEFs .ipynb](atac_seq/ANALYSIS_2/Fragment_length_distribution_somatic_new_norm.ipynb)      
 __Figure S3I__
 
 ### ANALYSIS 3    
 Chromatin accessibility in 2kb genomic bins, spermatocytes | MEFS, whole genome | promoters | sex chromosomes
 
-- Merged BigWig files (to upload in Zenodo)         
+- Merged BigWig files (per condition)         
 - [Simplified mm10_GRCm38_95 annotation file .csv](atac_seq/ANALYSIS_3/Mus_musculus_GTF_genes_short_GRCm38_95.csv)        
 - [Chromatin accessibility in 2kb bins spermatocytes .ipynb](atac_seq/ANALYSIS_3/Chromatin_accessibility_in_genomic_bins_spermatocytes.ipynb)   
 __Figure 3B,C,D__          
@@ -127,7 +127,7 @@ __Figure 3B,C,D__
 __Figure 3E__       
 - [Chromatin accessibility fold change on sex chromosomes .ipynb](atac_seq/ANALYSIS_3/Chrom_access_change_sex_chromosomes.ipynb)     
 __Figure 3F__
-- Merged BigWigs somatic cells (to upload in Zenodo)    
+- Merged BigWigs somatic cells (per condition)    
 - [Chromatin accessibility in 2kb bins MEFs .ipynb](atac_seq/ANALYSIS_3/Chromatin_accessibility_in_genomic_bins_MEFs.ipynb)      
 __Figure S3H__       
 
