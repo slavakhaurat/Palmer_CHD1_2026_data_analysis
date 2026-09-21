@@ -28,7 +28,6 @@ Visualisation with Python (Figure 2M)
 - [Visualisation with Python .ipynb](histones_mass_spec/Mass_spec_Histones_main_3nd_cleaned.ipynb)      
 __Figure 2M__     
     - contains proteins (histones) abundance change CHD1 cKO / Control
-    - change in detected histone modifications (PTMs) 
 
 
 
